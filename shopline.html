@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+        *{
+    padding:0;
+    margin: 0;
+    /* font-family:DFKai-sb; */
+}
+.ul{
+    display: flex;
+    justify-content: center;
+
+}
+nav{
+    position: fixed;
+    float: left;
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+    top:0;
+}
+nav .ul{
+    margin: 10px;
+    gap:10px;
+}
+nav li{
+    display: flex;
+    justify-content: center;
+
+}
+nav a{
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #1c1c1c;
+    text-decoration: none;
+
+}
+.button{
+    background-color: #2a71e3;
+    color: white;
+    border-radius: 10px 10px 10px 10px ;
+}
+.head{
+    margin: 80px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eceef4;
+    justify-content: center;
+}
+.head .left{
+    margin: 10px;
+    width: 40%;
+}
+h1{
+    font-size: 40px;
+    margin: 10px;
+    color:#052352;
+}
+h2{
+    font-size: 1.7em;
+}
+.head .left p{
+    width: 70%;
+
+}
+.head .right{
+    margin: 10px;
+}
+.head button{
+    background-color: #2a71e3;
+    width: 300px;
+    height: 50px;
+    color: white;
+    border-radius: 10px 10px 10px 10px ;
+    border-style: none;
+}
+.head button:hover{
+    background-color: #09172e;
+}
+.content{
+    background-color: #f4f4f4;
+    margin: 100px 0;
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content h2{
+    width: 30%;
+    margin: 40px 0;
+}
+.wrap{ 
+    width: 100%;
+    /* border: #052352 solid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.wrap .item{
+    /* border: #520505 solid; */
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 350px;
+    margin: 20px 0;
+}
+.wrap .item:nth-child(even){
+    /* border: #520505 solid; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 80%;
+    height: 350px;
+}
+.wrap .item .left{
+
+    width: 60%;
+}
+.wrap .item .left h2{
+    
+    width: 40%;
+}
+.wrap .item .left p{
+    color: #535565;
+}
+.wrap .item .left .list{
+    display: flex;
+}
+
+.wrap .item .left .list .list_content{
+    width: 40%; 
+}
+.wrap .item .left ul{
+    list-style: none;
+}
+.wrap .item .left .list .list_content ul li::before{
+    content: "\2022";  
+    font-size:30px;
+    color: #0c5ad6;
+    display: inline-block;
+    
+}
+.wrap .item .right{
+
+    width: 30%;   
+}
+.service{
+    background: #eaeaea;
+}
+.service .wrap{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.service .wrap .block{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.service .wrap .block .icon{
+    margin: 10px 100px;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service p{
+    margin: 10px;
+    text-align: center;
+}
+.brand{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+}
+.brand .wrap{
+    width: 100%;
+    margin: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.brand .wrap .brand_icon{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+.brand p{
+    width: 50%;
+}
+footer{
+    background-color: #00142d;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+footer .wrap{
+    width: 80%;
+    display: flex;
+    color: white;
+}
+footer .wrap .top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+footer .wrap .mid{
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+footer .wrap .mid ul{
+    list-style: none;
+}
+footer .wrap .mid li{
+    margin: 10px 0;
+}
+footer .wrap .mid li:first-child{
+    font-weight:bold;
+}
+footer .wrap .top ul{
+    
+    display: flex;
+    list-style: none;
+}
+footer .wrap .top li{
+    margin: 0 10px;
+}
+footer .wrap .buttom{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+footer .wrap .buttom ul{
+    list-style: none;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="ul">
+            <li><a href=""><b>Shop</b>LINE</a></li>
+            <li><a href="">新手上路</a></li>
+            <li><a href="">開店服務</a></li>
+            <li><a href="">行銷推廣</a></li>
+            <li><a href="">營運管理</a></li>
+            <li><a href="">方案費用</a></li>
+            <li><a href="">更多資源</a></li>
+            <li><a href="">開店說明會</a></li>
+            <li><a href="" class="button">免費試用</a></li>
+        </ul>
+    </nav>
+    <div class="head">
+        <div class="left">
+                <h1>想在哪開店創業
+                <br>不管是
+                網路開店<br>
+                SHOPLINE 一站輕鬆開賣</h1>
+                <p>從個人賣家到國際品牌，都能以 SHOPLINE 實現全通路零售，快速拓展市場到世界各地，輕鬆開始你的『 店 』商生意！</p>
+                <button>免費試用14天</button>
+                <p>＊無需綁定信用卡提供付款資訊</p>
+        </div>
+        <div class="right">
+            <img src="https://fakeimg.pl/400x450/5C87B3" style="border-radius: 40% 40%  0 0 ;">
+        </div>
+    </div>
+    <div class="content">
+        <h2>單一平台就能助你
+            在全通路輕鬆開店創業</h2>
+        <p>從網路商店架站到實體門市管理，只需要一個平台，就能輕鬆實現開店創業，並能同步管理所有銷售管道，SHOPLINE 助你賣得更多、賣得更好！</p>
+        
+    </div>
+    <!-- wrap -->
+    <div class="wrap">
+        <div class="item">
+            <div class="left">
+                <h2>
+                    免寫程式、多款版型
+                    <br>
+                    輕鬆打造全能電商網站 
+                </h2>
+                <br>
+                <p>
+                    不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。
+                </p>
+                <br>
+                <div class="list">
+                    <div class="list_content">
+                        <ul>
+                            <li>豐富版型主題與字型搭配</li>
+                            <li>RWD 響應式網頁設計</li>
+                            <li>獨有網址 ＆ SSL 安全憑證</li>
+                        </ul>    
+                    </div>
+                    <div class="list_content">
+                    <ul>
+                        <li>SEO 搜尋引擎優化</li>
+                        <li>一頁商店</li>
+                        <li>開放 HTML／CSS 編輯</li>
+                    </ul>    
+                    </div>
+                </div>
+                <a href="#">看看開店祕技<i class="material-icons">arrow_forward</i></a>
+            </div>
+            <div class="right">
+                <img src="https://picsum.photos/350/350/?random=10">
+            </div>
+        </div>
+        <div class="item">
+            <div class="left">
+                <h2>
+                    免寫程式、多款版型
+                    <br>
+                    輕鬆打造全能電商網站 
+                </h2>
+                <br>
+                <p>
+                    不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。
+                </p>
+                <br>
+                <div class="list">
+                    <div class="list_content">
+                        <ul>
+                            <li>豐富版型主題與字型搭配</li>
+                            <li>RWD 響應式網頁設計</li>
+                            <li>獨有網址 ＆ SSL 安全憑證</li>
+                        </ul>    
+                    </div>
+                    <div class="list_content">
+                    <ul>
+                        <li>SEO 搜尋引擎優化</li>
+                        <li>一頁商店</li>
+                        <li>開放 HTML／CSS 編輯</li>
+                    </ul>    
+                    </div>
+                </div>
+                <a href="#">看看開店祕技<i class="material-icons">arrow_forward</i></a>
+            </div>
+            <div class="right">
+                <img src="https://picsum.photos/350/350/?random=10">
+            </div>
+        </div>
+        <div class="item">
+            <div class="left">
+                <h2>
+                    免寫程式、多款版型
+                    <br>
+                    輕鬆打造全能電商網站 
+                </h2>
+                <br>
+                <p>
+                    不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。
+                </p>
+                <br>
+                <div class="list">
+                    <div class="list_content">
+                        <ul>
+                            <li>豐富版型主題與字型搭配</li>
+                            <li>RWD 響應式網頁設計</li>
+                            <li>獨有網址 ＆ SSL 安全憑證</li>
+                        </ul>    
+                    </div>
+                    <div class="list_content">
+                    <ul>
+                        <li>SEO 搜尋引擎優化</li>
+                        <li>一頁商店</li>
+                        <li>開放 HTML／CSS 編輯</li>
+                    </ul>    
+                    </div>
+                </div>
+                <a href="#">看看開店祕技<i class="material-icons">arrow_forward</i></a>
+            </div>
+            <div class="right">
+                <img src="https://picsum.photos/350/350/?random=10">
+            </div>
+        </div>
+        <div class="item">
+            <div class="left">
+                <h2>
+                    免寫程式、多款版型
+                    <br>
+                    輕鬆打造全能電商網站 
+                </h2>
+                <br>
+                <p>
+                    不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。
+                </p>
+                <br>
+                <div class="list">
+                    <div class="list_content">
+                        <ul>
+                            <li>豐富版型主題與字型搭配</li>
+                            <li>RWD 響應式網頁設計</li>
+                            <li>獨有網址 ＆ SSL 安全憑證</li>
+                        </ul>    
+                    </div>
+                    <div class="list_content">
+                    <ul>
+                        <li>SEO 搜尋引擎優化</li>
+                        <li>一頁商店</li>
+                        <li>開放 HTML／CSS 編輯</li>
+                    </ul>    
+                    </div>
+                </div>
+                <a href="#">看看開店祕技<i class="material-icons">arrow_forward</i></a>
+            </div>
+            <div class="right">
+                <img src="https://picsum.photos/350/350/?random=10">
+            </div>
+        </div>
+        <div class="item">
+            <div class="left">
+                <h2>
+                    免寫程式、多款版型
+                    <br>
+                    輕鬆打造全能電商網站 
+                </h2>
+                <br>
+                <p>
+                    不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。
+                </p>
+                <br>
+                <div class="list">
+                    <div class="list_content">
+                        <ul>
+                            <li>豐富版型主題與字型搭配</li>
+                            <li>RWD 響應式網頁設計</li>
+                            <li>獨有網址 ＆ SSL 安全憑證</li>
+                        </ul>    
+                    </div>
+                    <div class="list_content">
+                    <ul>
+                        <li>SEO 搜尋引擎優化</li>
+                        <li>一頁商店</li>
+                        <li>開放 HTML／CSS 編輯</li>
+                    </ul>    
+                    </div>
+                </div>
+                <a href="#">看看開店祕技<i class="material-icons">arrow_forward</i></a>
+            </div>
+            <div class="right">
+                <img src="https://picsum.photos/350/350/?random=10">
+            </div>
+        </div>
+    </div>
+    <!-- service -->
+    <div class="service">
+        <center><h2>更多功能與服務</h2></center>
+        <div class="wrap">
+            <div class="block">
+                <div class="icon">
+                    <i class="material-icons" style="font-size: 3em;color: rgb(29, 29, 47);">auto_awesome</i>
+                </div>
+                <h4>強大庫存與訂單系統</h4>
+                <p>
+                    從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感
+                </p>
+            </div>
+            <div class="block">
+                <div class="icon">
+                    <i class="material-icons" style="font-size: 3em;color: rgb(29, 29, 47);">auto_awesome</i>
+                </div>
+                <h4>強大庫存與訂單系統</h4>
+                <p>
+                    從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感
+                </p>
+            </div>
+            <div class="block">
+                <div class="icon">
+                    <i class="material-icons" style="font-size: 3em;color: rgb(29, 29, 47);">auto_awesome</i>
+                </div>
+                <h4>強大庫存與訂單系統</h4>
+                <p>
+                    從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感
+                </p>
+            </div>
+            <div class="block">
+                <div class="icon">
+                    <i class="material-icons" style="font-size: 3em;color: rgb(29, 29, 47);">auto_awesome</i>
+                </div>
+                <h4>強大庫存與訂單系統</h4>
+                <p>
+                    從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感
+                </p>
+            </div>
+            <div class="block">
+                <div class="icon">
+                    <i class="material-icons" style="font-size: 3em;color: rgb(29, 29, 47);">auto_awesome</i>
+                </div>
+                <h4>強大庫存與訂單系統</h4>
+                <p>
+                    從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感
+                </p>
+            </div>
+            <div class="block">
+                <div class="icon">
+                    <i class="material-icons" style="font-size: 3em;color: rgb(29, 29, 47);">auto_awesome</i>
+                </div>
+                <h4>強大庫存與訂單系統</h4>
+                <p>
+                    從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- brand -->
+    <div class="brand">
+        <h2>人氣品牌一致推薦使用</h2>
+        <div class="wrap">
+            <div class="brand_icon">
+                <i class="material-icons" style="font-size: 3em;color: rgb(29, 29, 47);">assignment_add</i>
+            </div>
+            <div class="brand_icon">
+                <i class="material-icons" style="font-size: 3em;color: rgb(135, 135, 135);">assignment_add</i>
+            </div>
+            <div class="brand_icon">
+                <i class="material-icons" style="font-size: 3em;color: rgb(135, 135, 135);">assignment_add</i>
+            </div>
+            <div class="brand_icon">
+                <i class="material-icons" style="font-size: 3em;color: rgb(135, 135, 135);">assignment_add</i>
+            </div>
+            <div class="brand_icon">
+                <i class="material-icons" style="font-size: 3em;color: rgb(135, 135, 135);">assignment_add</i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur beatae, quaerat laboriosam voluptates facilis! Perspiciatis, consectetur omnis iure ipsam reiciendis quod nostrum expedita consequuntur est provident veniam quas ab!</p>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="wrap">
+            <div class="top">
+                <ul>
+                    <li>
+                        關於我們
+                    </li>
+                    <li>
+                        人才招募
+                    </li>
+                    <li>
+                        媒體專區
+                    </li>
+                </ul>
+            </div>
+            <div class="mid">
+                <ul>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                    <li>
+                        網路開店
+                    </li>
+                </ul>
+                <!-- <button>資訊安全保護專區</button> -->
+            </div>
+            <div class="buttom">
+                <ul>
+                    <li>
+                        服務時間 星期一至五 上午 10 點至晚上 7 點
+                    </li>
+                    <li>
+                        &copy;Copyright 2023 SHOPLINE Tech Co., Ltd.
+                    </li>
+                    <li>
+                        網站地圖 隱私權政策 會員條款
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
