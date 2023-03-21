@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+        *{
+    padding:0;
+    margin: 0;
+    /* font-family:DFKai-sb; */
+}
+.ul{
+    display: flex;
+    justify-content: center;
+
+}
+nav{
+    position: fixed;
+    float: left;
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+    top:0;
+}
+nav .ul{
+    margin: 10px;
+    gap:10px;
+}
+nav li{
+    display: flex;
+    justify-content: center;
+
+}
+nav a{
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #1c1c1c;
+    text-decoration: none;
+
+}
+.button{
+    background-color: #2a71e3;
+    color: white;
+    border-radius: 10px 10px 10px 10px ;
+}
+.head{
+    margin: 80px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eceef4;
+    justify-content: center;
+}
+.head .left{
+    margin: 10px;
+    width: 40%;
+}
+h1{
+    font-size: 40px;
+    margin: 10px;
+    color:#052352;
+}
+h2{
+    font-size: 1.7em;
+}
+.head .left p{
+    width: 70%;
+
+}
+.head .right{
+    margin: 10px;
+}
+.head button{
+    background-color: #2a71e3;
+    width: 300px;
+    height: 50px;
+    color: white;
+    border-radius: 10px 10px 10px 10px ;
+    border-style: none;
+}
+.head button:hover{
+    background-color: #09172e;
+}
+.content{
+    background-color: #f4f4f4;
+    margin: 100px 0;
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content h2{
+    width: 30%;
+    margin: 40px 0;
+}
+.wrap{ 
+    width: 100%;
+    /* border: #052352 solid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.wrap .item{
+    /* border: #520505 solid; */
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 350px;
+    margin: 20px 0;
+}
+.wrap .item:nth-child(even){
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 80%;
+    height: 350px;
+}
+.wrap .item .left{
+
+    width: 60%;
+}
+.wrap .item .left h2{
+    
+    width: 40%;
+}
+.wrap .item .left p{
+    color: #535565;
+}
+.wrap .item .left .list{
+    display: flex;
+}
+
+.wrap .item .left .list .list_content{
+    width: 40%; 
+}
+.wrap .item .left ul{
+    list-style: none;
+}
+.wrap .item .left .list .list_content ul li::before{
+    content: "\2022";  
+    font-size:30px;
+    color: #0c5ad6;
+    display: inline-block;
+    
+}
+.wrap .item .right{
+
+    width: 30%;   
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="ul">
+            <li><a href=""><b>Shop</b>LINE</a></li>
+            <li><a href="">新手上路</a></li>
+            <li><a href="">開店服務</a></li>
+            <li><a href="">行銷推廣</a></li>
+            <li><a href="">營運管理</a></li>
+            <li><a href="">方案費用</a></li>
+            <li><a href="">更多資源</a></li>
+            <li><a href="">開店說明會</a></li>
+            <li><a href="" class="button">免費試用</a></li>
+        </ul>
+    </nav>
+    <div class="head">
+        <div class="left">
+                <h1>想在哪開店創業
+                <br>不管是
+                網路開店<br>
+                SHOPLINE 一站輕鬆開賣</h1>
+                <p>從個人賣家到國際品牌，都能以 SHOPLINE 實現全通路零售，快速拓展市場到世界各地，輕鬆開始你的『 店 』商生意！</p>
+                <button>免費試用14天</button>
+                <p>＊無需綁定信用卡提供付款資訊</p>
+        </div>
+        <div class="right">
+            <img src="https://fakeimg.pl/400x450/5C87B3" style="border-radius: 40% 40%  0 0 ;">
+        </div>
+    </div>
+    <div class="content">
+        <h2>單一平台就能助你
+            在全通路輕鬆開店創業</h2>
+        <p>從網路商店架站到實體門市管理，只需要一個平台，就能輕鬆實現開店創業，並能同步管理所有銷售管道，SHOPLINE 助你賣得更多、賣得更好！</p>
+        
+    </div>
+    <!-- wrap -->
+    <div class="wrap">
+        <div class="item">
+            <div class="left">
+                <h2>
+                    免寫程式、多款版型
+                    <br>
+                    輕鬆打造全能電商網站 
+                </h2>
+                <br>
+                <p>
+                    不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。
+                </p>
+                <br>
+                <div class="list">
+                    <div class="list_content">
+                        <ul>
+                            <li>豐富版型主題與字型搭配</li>
+                            <li>RWD 響應式網頁設計</li>
+                            <li>獨有網址 ＆ SSL 安全憑證</li>
+                        </ul>    
+                    </div>
+                    <div class="list_content">
+                    <ul>
+                        <li>SEO 搜尋引擎優化</li>
+                        <li>一頁商店</li>
+                        <li>開放 HTMLCSS 編輯</li>
+                    </ul>    
+                    </div>
+                </div>
+                <a href="#">看看開店祕技<i class="material-icons">arrow_forward</i></a>
+            </div>
+            <div class="right">
+                <img src="https://picsum.photos/350/350/?random=10">
+            </div>
+        </div>
+        <div class="item">
+            <div class="left">
+                <h2>
+                    免寫程式、多款版型
+                    <br>
+                    輕鬆打造全能電商網站 
+                </h2>
+                <br>
+                <p>
+                    不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。
+                </p>
+                <br>
+                <div class="list">
+                    <div class="list_content">
+                        <ul>
+                            <li>豐富版型主題與字型搭配</li>
+                            <li>RWD 響應式網頁設計</li>
+                            <li>獨有網址 ＆ SSL 安全憑證</li>
+                        </ul>    
+                    </div>
+                    <div class="list_content">
+                    <ul>
+                        <li>SEO 搜尋引擎優化</li>
+                        <li>一頁商店</li>
+                        <li>開放 HTML／CSS 編輯</li>
+                    </ul>    
+                    </div>
+                </div>
+                <a href="#">看看開店祕技<i class="icons">arrow_forward</i></a>
+            </div>
+            <div class="right">
+                <img src="https://picsum.photos/350/350/?random=10">
+            </div>
+        </div>
+        <div class="item">
+            <div class="left">
+                <h2>
+                    免寫程式、多款版型
+                    <br>
+                    輕鬆打造全能電商網站 
+                </h2>
+                <br>
+                <p>
+                    不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。
+                </p>
+                <br>
+                <div class="list">
+                    <div class="list_content">
+                        <ul>
+                            <li>豐富版型主題與字型搭配</li>
+                            <li>RWD 響應式網頁設計</li>
+                            <li>獨有網址 ＆ SSL 安全憑證</li>
+                        </ul>    
+                    </div>
+                    <div class="list_content">
+                    <ul>
+                        <li>SEO 搜尋引擎優化</li>
+                        <li>一頁商店</li>
+                        <li>開放 HTML／CSS 編輯</li>
+                    </ul>    
+                    </div>
+                </div>
+                <a href="#">看看開店祕技<i class="icons">arrow_forward</i></a>
+            </div>
+            <div class="right">
+                <img src="https://picsum.photos/350/350/?random=10">
+            </div>
+        </div>
+        <div class="item">
+            <div class="left">
+                <h2>
+                    免寫程式、多款版型
+                    <br>
+                    輕鬆打造全能電商網站 
+                </h2>
+                <br>
+                <p>
+                    不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。
+                </p>
+                <br>
+                <div class="list">
+                    <div class="list_content">
+                        <ul>
+                            <li>豐富版型主題與字型搭配</li>
+                            <li>RWD 響應式網頁設計</li>
+                            <li>獨有網址 ＆ SSL 安全憑證</li>
+                        </ul>    
+                    </div>
+                    <div class="list_content">
+                    <ul>
+                        <li>SEO 搜尋引擎優化</li>
+                        <li>一頁商店</li>
+                        <li>開放 HTML／CSS 編輯</li>
+                    </ul>    
+                    </div>
+                </div>
+                <a href="#">看看開店祕技<i class="icons"></i></a>
+            </div>
+            <div class="right">
+                <img src="https://picsum.photos/350/350/?random=10">
+            </div>
+        </div>
+        <div class="item">
+            <div class="left">
+                <h2>
+                    免寫程式、多款版型
+                    <br>
+                    輕鬆打造全能電商網站 
+                </h2>
+                <br>
+                <p>
+                    不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。
+                </p>
+                <br>
+                <div class="list">
+                    <div class="list_content">
+                        <ul>
+                            <li>豐富版型主題與字型搭配</li>
+                            <li>RWD 響應式網頁設計</li>
+                            <li>獨有網址 ＆ SSL 安全憑證</li>
+                        </ul>    
+                    </div>
+                    <div class="list_content">
+                    <ul>
+                        <li>SEO 搜尋引擎優化</li>
+                        <li>一頁商店</li>
+                        <li>開放 HTML／CSS 編輯</li>
+                    </ul>    
+                    </div>
+                </div>
+                <a href="#">看看開店祕技<i class="icons"></i></a>
+            </div>
+            <div class="right">
+                <img src="https://picsum.photos/350/350/?random=10">
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
